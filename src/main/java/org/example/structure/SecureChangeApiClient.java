@@ -17,34 +17,7 @@ public class SecureChangeApiClient {
     {
 
         JsonObject ticket = new JsonObject();
-        /*
-        {
-  "ticket": {
-    "subject": "...",
-    "priority": "...",
-    "workflow": { "name": "..." },
-    "steps": {
-      "step": [{
-        "tasks": {
-          "task": {
-            "fields": {
-              "field": {
-                "access_request": {
-                  "action": "Allow",
-                  "sources": { "source": [{ "ip_address": "..." }] },
-                  "destinations": { "destination": [{ "ip_address": "..." }] },
-                  "services": { "service": [{ "port": "...", "protocol": "..." }] }
-                }
-              }
-            }
-          }
-        }
-      }]
-    }
-  }
-}
 
-         */
         ticket.addProperty("subject", request.getSubject());
         ticket.addProperty("priority", request.getPriority());
 
