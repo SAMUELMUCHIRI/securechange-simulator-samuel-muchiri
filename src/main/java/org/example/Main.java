@@ -46,7 +46,7 @@ public class Main {
 
         System.out.println("\n\tAdding ALl three Steps \n");
         List<WorkflowStep> stepListOne = StepList(auditLogger , apiClientTwo , true ,"N/A");
-        List<WorkflowStep> stepListTwo = StepList(auditLogger , apiClientTwo , false ,"Manager rejected , bacause of conflicting details");
+        List<WorkflowStep> stepListTwo = StepList(auditLogger , apiClientTwo , false ,"Manager rejected , because of conflicting details");
         List<WorkflowStep> stepListThree = StepList(auditLogger , apiClientTwo , true ,"N/A");
 
 
